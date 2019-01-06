@@ -3,7 +3,7 @@ exports.run = async (client, msg, args) => {
   var bot = client
     if (message.author.id !== '327586923252285440') return;
     try {
-        let codein = args.slice(1).join(" ");
+        let codein = args.join(" ");
         let code = eval(codein);
         if (codein.includes(`token`)) {
         code = 'gabole >:(';
