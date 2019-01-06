@@ -15,7 +15,7 @@ exports.run = async (client, msg, args) => {
             code = require('util').inspect(code, { depth: 0 });
         let embed = new client.ErisEmber()
         .setAuthor('Evaluate')
-        .setColor('#0000FF')
+     //  .setColor('#0000FF')
         .addField(':inbox_tray: Input', `\`\`\`js\n${codein}\`\`\``)
         .addField(':outbox_tray: Output', `\`\`\`js\n${code}\n\`\`\``)
         message.channel.createMessage({embed})
