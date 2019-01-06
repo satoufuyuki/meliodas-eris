@@ -13,7 +13,7 @@ exports.run = async (client, msg, args) => {
 
         if (typeof code !== 'string')
             code = require('util').inspect(code, { depth: 0 });
-        let embed = new client.ErisEmbed()
+        let embed = new client.ErisEmber()
         .setAuthor('Evaluate')
         .setColor('RANDOM')
         .addField(':inbox_tray: Input', `\`\`\`js\n${codein}\`\`\``)
