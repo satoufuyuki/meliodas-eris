@@ -8,6 +8,7 @@ require('./server.js')
 const client = new Eris(process.env.TOKEN);
 const youtube = new YouTube(GOOGLE_KEY);
 client.queue = new Eris.Collection();
+client.ErisEmber = require('./EmbedBuilder.js')
 const queue = client.queue
 
 client.on('ready', async () => {
